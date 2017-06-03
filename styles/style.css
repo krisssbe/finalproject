@@ -1,0 +1,367 @@
+
+/* Set box-sizing to border-box for all elements */
+html {
+  box-sizing: border-box;
+}
+/* Play nicely with other components */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+/* navigation and header */
+
+header {
+  overflow: auto; 
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#logo{
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin: 10px 10px;
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 32px;
+  float: left;
+}
+
+/* Apply the same rules to both header and footer */
+header a,
+footer a {
+  text-decoration: none;
+  color: #2F4F4F;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+.mainnavigation {
+  margin: 15px 0;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigationheader{
+  margin: 20px 20px 20px 0;
+  padding: 0;
+  float: right;
+}
+
+.navigationlink {
+  font-size: 18px;
+  letter-spacing: 1px;  
+  text-decoration: none;
+  margin-left: 1em;
+  list-style-type: none;
+}
+
+#menu_toggler {
+float: right;
+}
+
+@media screen and (max-width: 800px) {
+  #match4action {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mainnavigation {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mainnavigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #menu_toggler {
+    display: none;
+  }
+}
+
+/* hands and vision */
+
+.hands{
+  padding: 50px;
+  letter-spacing: 1px;  
+  color: #2F4F4F;
+  background-image: url("../images/hand_psd.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 45%;
+  height: 500px;
+  height: 100vh;
+  position: relative;
+  border-bottom: 15px solid #F5F5F5;
+}
+
+.statement{
+  font-size: 30px;
+  text-align: center;
+  color: #2F4F4F;
+  position: absolute;
+  bottom: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+  .statement {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .statement {
+    font-size: 22px;
+  }
+}
+
+/* first text field, vision */
+
+.vision{
+  padding: 100px 100px;
+  font-size: 24px;
+  color: #2F4F4F;
+}
+
+@media screen and (max-width: 1200px) {
+  .vision {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .vision {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .vision {
+    font-size: 14px;
+  }
+}
+
+/* matching mechanism */
+
+.process{
+  border-bottom: 15px solid #F5F5F5;
+  border-top: 15px solid #F5F5F5;
+}
+
+.teaser{
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: #2F4F4F;
+  padding: 80px 0;
+}
+
+.matchprocess{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 100px;
+ }
+
+/*.step{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  float: left;
+}*/
+
+
+@media screen and (max-width: 900px) {
+  .teaser {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .matchprocess {
+    width: 80%;
+  }
+}
+
+/* volunteer & organisation section */
+
+.wrapper{
+  overflow: auto;
+  background-image: url("../images/children40.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  color: #2F4F4F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.lowerp {
+  padding: 0 30px 0 0;
+  font-size: 26px;
+}
+
+.floatsection{
+  width: 50%;
+  float: left;
+  letter-spacing: 1px;  
+  padding: 0 10%;
+}
+
+.socialimpact{
+  font-size: bold;
+  font-size: 32px;
+  /*padding: 100px 100px;*/
+  text-align: center;
+  color: #2F4F4F;
+}
+
+@media screen and (max-width: 1000px) {
+  .floatsection {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lowerp {
+    font-size: 16px;
+  }
+}
+
+/* carousel with impact stories */
+/*.carousel{
+  border-top: 15px solid #F5F5F5;
+  border-bottom: 15px solid #F5F5F5;
+}
+.slideshow {
+  width: 90%;
+  margin: 0 auto;
+}
+.slick-prev, .slick-next {
+  background-color: red;
+}
+@media screen and (max-width: 1000px) {
+  .carousel {
+    width: 70%;
+  }
+}*/
+
+/* social media section */
+
+.social{
+  padding: 50px 20px;
+  background-color: #F5F5F5;
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.socialcards{
+  border-radius: 25px;
+  width: 27%;
+  height: 23vw;
+  padding: 30px 10px 0 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #2F4F4F;
+  background-color: white;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.icon{
+  padding-bottom: 40px;
+  display: block;
+  margin: auto;
+}
+
+.picture {
+  width: 40%;
+}
+
+.post{
+  display: block;
+}
+
+@media screen and (max-width: 1150px) {
+  .post {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .picture {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .picture {
+    width: 40%;
+  }
+}
+
+/* footer */
+
+footer{  
+  overflow: auto;
+  font-size: 18px;
+  background-color: white;
+  border-top: 15px solid #F5F5F5;
+}
+
+h4{
+  float: left;
+}
+
+.navigationend{
+  padding: 10px;
+  float: right;
+}
+
+.navigationfooter {
+  float: left;
+  display: inline;
+  font-size: 14px;
+  letter-spacing: 1px; 
+  margin-left: 1em;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigationfooter {
+    display: none;
+  }
+}
